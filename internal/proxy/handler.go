@@ -157,7 +157,7 @@ func handleConnect(w http.ResponseWriter, r *http.Request) {
 
 	err = resp.Write(tlsClientConn)
 	if err != nil {
-		log.Println("[+] ERROR :: Failedd to send response to the client", err)
+		log.Println("[+] ERROR :: Failed to send response to the client", err)
 		tlsServerConn.Close()
 		tlsClientConn.Close()
 		return
