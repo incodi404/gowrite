@@ -31,3 +31,7 @@ http-proxy/
 │
 ├── go.mod
 └── README.md
+
+### Build file for Linux
+Command-1: $env:CGO_ENABLED=0; $env:GOOS="linux"; $env:GOARCH="amd64";
+Command-1: go build -trimpath -ldflags="-s -w" -o proxy ./cmd/proxy
