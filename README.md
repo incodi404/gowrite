@@ -21,9 +21,7 @@ This project exists because **real engineers still write real software**.
 - 🔁 **HTTP Request Forwarding** — Intercepts and forwards client HTTP requests to target servers
 - 🔒 **HTTPS Tunneling** — Full support for the `CONNECT` method for encrypted traffic
 - 📋 **Request/Response Logging** — Visibility into all traffic flowing through the proxy
-- 🧵 **Concurrent Handling** — Goroutine-powered for high-throughput request processing
 - ⚙️ **Configurable** — Tune port, timeouts, and other server settings via config
-- 🔐 **Auth & Filtering Ready** — Middleware layer for auth, rate limiting, and request filtering
 
 ---
 
