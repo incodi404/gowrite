@@ -36,22 +36,6 @@ gowrite/
 ├── internal/
 │   ├── proxy/
 │   │   ├── handler.go       # Handles incoming client requests
-│   │   ├── forward.go       # Forwards requests to target servers
-│   │   ├── response.go      # Sends response back to client
-│   │   └── tunnel.go        # CONNECT method (HTTPS tunneling)
-│   │
-│   ├── config/
-│   │   └── config.go        # Config loading (port, timeouts, etc.)
-│   │
-│   ├── logger/
-│   │   └── logger.go        # Request / response logging
-│   │
-│   └── middleware/
-│       └── auth.go          # Auth, filtering, rate limiting (optional)
-│
-├── pkg/
-│   └── utils/
-│       └── net.go           # Network helpers (copy streams, headers)
 │
 ├── cert/                    # TLS certificates
 ├── go.mod
@@ -110,11 +94,7 @@ Client
 ┌──────────────────────────┐
 │       GoWrite Proxy       │
 │                           │
-│  handler.go               │  ← Accepts & parses client request
-│  forward.go               │  ← Proxies HTTP requests upstream
-│  tunnel.go                │  ← Tunnels HTTPS via CONNECT
-│  response.go              │  ← Streams response back to client
-│  logger.go                │  ← Logs method, URL, status, latency
+│  handler.go               │  ← Accepts & parses client request,  Proxies HTTP requests upstream, Tunnels HTTPS via CONNECT, Streams response back to client, Logs method, URL, status, latency
 └──────────────────────────┘
   │
   ▼
