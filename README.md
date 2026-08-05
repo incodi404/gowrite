@@ -117,28 +117,6 @@ This is software written by someone who **actually thought about it**.
 
 ---
 
-## Roadmap
-
-- [ ] HTTPS MITM with custom CA certificate support
-- [ ] Request/Response header injection
-- [ ] URL-based traffic filtering & blacklisting
-- [ ] Web UI for real-time traffic inspection
-- [ ] Docker support
-- [ ] Upstream load balancing
-
----
-
 ## Author
 
-**incodi404** — building real things in a vibe-coded world.
-GitHub: [@incodi404](https://github.com/incodi404)
-
----
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
----
-
-<p align="center"><i>Written with intent. Not vibes.</i></p>
+Dipankar Chowdhury — Backend Engineer (Security Focused) | [GitHub](https://github.com/incodi404/) · [LinkedIn](https://www.linkedin.com/in/dipankar-chowdhury/)
